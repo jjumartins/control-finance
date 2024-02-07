@@ -1,0 +1,39 @@
+%fonts {
+  font-family: var(--default-font);
+  font-weight: 600;
+  color: var(--gray1);
+}
+
+.title1 {
+  @extend %fonts;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.title2 {
+  @extend %fonts;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+}
+
+.text1 {
+  @extend %fonts;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: var(--gray2)
+}
+
+.text2 {
+  @extend %fonts;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: var(--gray2)
+}
+
+body {
+  @extend %fonts;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}

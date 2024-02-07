@@ -1,0 +1,81 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 2rem 1rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    input {
+      outline: none;
+      padding: 0.8rem;
+      border: var(--border-default);
+      border-radius: var(--radius-default);
+      font-family: var(--default-font);
+      font-size: 0.9rem;
+
+      &:focus {
+        border-color: var(--gray3);
+      }
+    }
+  }
+
+  .typeInfo {
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        width: 100%;
+        border: var(--border-default);
+        background-color: transparent;
+        color: var(--gray2);
+        padding: 0.8rem;
+
+        &:focus {
+          background: var(--gray5);
+        }
+      }
+    }
+  }
+
+  button {
+    width: fit-content;
+    padding: 0.6rem 1rem;
+
+    align-self: center;
+
+    border-radius: var(--radius-default);
+
+    background: var(--brand2);
+    color: var(--gray5);
+  }
+}
+
+@media (min-width: 450px) {
+  .register {
+    width: 800px;
+    margin-inline: auto;
+
+    .typeInfo {
+      div {
+        flex-direction: row;
+
+        button:hover {
+          font-size: 0.9rem;
+          font-weight: 800;
+          color: var(--gray1);
+        }
+      }
+    }
+
+    .insertButton:hover {
+      background: var(--brand1);
+    }
+  }
+}

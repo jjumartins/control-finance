@@ -1,0 +1,28 @@
+.container {
+  padding: 1rem;
+  
+  .totalInfo {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    background-color: var(--gray5);
+    border: var(--border-default);
+    border-radius: var(--radius-default);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .container {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+}

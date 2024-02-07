@@ -1,0 +1,43 @@
+.resume {
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    button {
+      border: var(--border-default);
+      border-radius: var(--radius-default);
+      width: 100px;
+      padding: 0.5rem;
+
+      &:focus {
+        background: var(--gray5);
+      }
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .resume {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 800px;
+    margin-inline: auto;
+
+    div {
+      button:hover {
+        font-size: 0.9rem;
+        font-weight: 800;
+        color: var(--gray1);
+      }
+    }
+  }
+}

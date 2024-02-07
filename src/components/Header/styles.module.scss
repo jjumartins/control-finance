@@ -1,0 +1,17 @@
+.header {
+  background: var(--gray5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 5rem;
+
+  h1 {
+    color: var(--gray1);
+
+    span {
+      color: var(--brand1);
+    }
+  }
+}
